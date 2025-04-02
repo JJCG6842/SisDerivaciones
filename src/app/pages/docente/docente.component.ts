@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
+
 
 @Component({
   selector: 'app-docente',
@@ -7,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './docente.component.scss'
 })
 export class DocenteComponent {
+  constructor (public authService: AuthService){}
 
 }
